@@ -102,3 +102,28 @@
   fill: var(--primary-white);
 
 }
+
+.features-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.features-title-wrap {
+    margin-bottom: 10px;
+}
+
+.ourteam-items {
+    display: flex;
+    gap: 30px;
+}
+
+.portfolio-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+
+}
