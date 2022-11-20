@@ -27,10 +27,12 @@
 }
 
 .contacts-footer {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71, 400, 0.02em);
+    
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
   margin-bottom: 9px;
   &:hover {
     color: var(--accent-color);
@@ -47,9 +49,11 @@
 }
 
 .footer-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14, 700, null);
+    
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white);
   margin-bottom: 20px;

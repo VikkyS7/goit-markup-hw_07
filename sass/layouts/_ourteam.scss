@@ -6,29 +6,37 @@
 }
 
 .ourteam-text {
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 1.19, null, 0.03em);
+    
+  // font-size: 16px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 16px;
 }
 
 .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 1.17, 700, 0.03em);
+    
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.17;
+  // letter-spacing: 0.03em;
   text-align: center;
-  letter-spacing: 0.03em;
+  
   color: var(--primary-text-color);
   margin-bottom: 50px;
 }
 
 .h2 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(16px, 1.19, 500, 0.03em);
+    
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 10px;
 }
@@ -36,19 +44,23 @@
 .h2-portfolio {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, 2, 700, 0.06em);
+    
+  // font-weight: 700;
+  // font-size: 18px;
+  // line-height: 2;
+  // letter-spacing: 0.06em;
   margin-bottom: 4px;
   color: var(--primary-text-color);
 }
 
 .h3 {
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+@include font(16px, 1.18, 500, null);
+  
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.18;
 }
 .section-ourteam {
   background-color: var(--section2-color);
@@ -102,10 +114,12 @@
 }
 
 .features-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+  @include font(14px, 1.14, 700, 0.03em);
+    
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
 }

@@ -4,10 +4,11 @@
     background-color: var(--accent-color);
     min-width: 216px;
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    @include font(16px, 1.88, 700, 0.06em);
+    // font-size: 16px;
+    // line-height: 1.88;
+    // font-weight: 700;
+    // letter-spacing: 0.06em;
     border: none;
     padding: 10px 32px;
     border-radius: 4px;
@@ -20,5 +21,4 @@
     background-color: var(--button-active-color);
 }    
 }
-
 

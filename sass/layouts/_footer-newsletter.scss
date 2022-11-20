@@ -1,6 +1,10 @@
 .newsletter-email{
   
-    font-size: 16px;
+  @include font(16px, null, 400, 0.03em);
+    
+    // font-size: 16px;
+    // font-weight: 400;  
+    //  letter-spacing: 0.03em;
     color: var(--contacts-color);
     border: 1px solid var(--modal-border);
     border-radius: 4px;
@@ -8,15 +12,14 @@
     padding-top: 12px;
     outline: transparent;
     resize: none;
-    font-weight: 400;  
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
+    @extend %list;
+    // display: flex;
+    // align-items: center;
     margin-right: 10px;
  }
 
 .modal-input-footer{
-  
+
 width: 358px;
 height: 52px;
 border: 1px solid var(--border-color);
