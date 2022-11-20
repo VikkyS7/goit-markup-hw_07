@@ -1,0 +1,89 @@
+.about {
+padding: 94px 0;
+}
+
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.features-title-wrap {
+  margin-bottom: 10px;
+}
+
+.ourteam-items {
+  display: flex;
+  gap: 30px;
+}
+
+.portfolio-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+
+} 
+
+
+.whatwedo {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  
+}
+.whatwedo-section {
+  padding: 94px 0;
+}
+
+.whatwedo-list {
+  display: flex;
+  gap: 30px;
+}
+.container-whatwedo {
+  margin: 94px 215px;
+}
+.whatwedo-wrap{
+
+  position: relative;
+}
+.whatwedo-item {
+  width: calc((100% - 150px) / 4);
+  height: 120px;
+  background-color: F5F4FA;
+}
+
+.whatwedo-icon {
+  fill: currentColor;
+}
+
+.whatwedo-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 23px;
+  background-color: var(--section2-color);
+}
+.whatwedo-text{
+  position: absolute;
+    bottom: 0; 
+    font-weight: 700; 
+    line-height: 1.14; 
+    text-transform: uppercase; 
+    color: var(--primary-white);
+    width: 370px; 
+    height: 70px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background: rgba(47, 48, 58, 0.8);
+
+}

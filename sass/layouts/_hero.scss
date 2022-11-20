@@ -1,0 +1,58 @@
+.hero {
+    background-color: var(--hero-color);
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 600px;
+    align-items: center;
+    padding: 200px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 696px;
+    margin-bottom: 30px;
+}
+
+.about {
+    padding: 94px 0;
+}
+
+
+// .features-title {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--primary-text-color);
+// }
+
+// .features-title-wrap {
+//     margin-bottom: 10px;
+// }
+
+// .ourteam-items {
+//     display: flex;
+//     gap: 30px;
+// }
+
+// .portfolio-text {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     color: var(--secondary-text-color);
+
+// }
