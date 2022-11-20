@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -21,6 +21,9 @@
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .backdrop.is-hidden & {
+            transform: translate(-50%, -50%) scaleY(0);
+        }
 }
 
 .modal-title {
@@ -42,9 +45,19 @@
     padding-left: 42px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:focus+.modal-input-icon {
+        fill: var(--accent-color);
+    }
+     &:focus {
+    border-color: var(--accent-color);
+    
+    }
+    &::placeholder {
+     color: var(--border-color);
+    font-size: 16px;
+    
+        }
 }
-
 
 .modal-input-icon {
     position: absolute;
@@ -53,10 +66,6 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus+.modal-input-icon {
-    fill: var(--accent-color);
-
-}
 
 .modal-field {
     margin-bottom: 30px;
@@ -74,19 +83,16 @@
     outline: transparent;
     resize: none;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.modal-text:focus,
-.modal-input:focus {
-
+    &:focus
+        {
     border-color: var(--accent-color);
+        }
 }
+
 
 .input-wrap {
     position: relative;
     margin-bottom: 10px;
-
 
 }
 
@@ -104,17 +110,6 @@
     margin-bottom: 4px;
 }
 
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scaleY(0);
-}
-
-.modal-input::placeholder {
-    color: var(--border-color);
-    font-size: 16px;
-
-}
-
 .check-text {
     font-size: 14px;
     color: var(--secondary-text-color);
@@ -122,27 +117,27 @@
     align-items: center;
     justify-content: center;
 
-}
+    &:before {
+            content: '';
+            width: 15px;
+            height: 16px;
+            border: 2px solid var(--primary-text-color);
+            border-radius: 3px;
+        }
 
-.check-text:before {
-    content: '';
-    width: 15px;
-    height: 16px;
-    border: 2px solid var(--primary-text-color);
-    border-radius: 3px;
-}
-
-.input-check:checked+.check-text::before {
-    background-color: var(--accent-color);
-    border-color: transparent;
-    background-image: url(../img/check.svg);
-    background-repeat: no-repeat;
 }
 
 .input-check {
 
     width: 15px;
     height: 16px;
+
+    &:checked+.check-text::before {
+            background-color: var(--accent-color);
+            border-color: transparent;
+            background-image: url(../img/check.svg);
+            background-repeat: no-repeat;
+        }
 
 }
 
@@ -174,13 +169,13 @@
     justify-content: center;
     cursor: pointer;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close:hover {
+    &:hover {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 
 }
+}
+
 
 .backdrop.is-hidden {
     opacity: 0;
@@ -189,6 +184,7 @@
 }
 
 /*------MODAL---BUTTON---*/
+
 .btn-modal-send {
 
     background-color: var(--accent-color);
@@ -207,16 +203,17 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-modal-send:hover,
-.btn-modal-send:focus {
+    &:hover,
+    &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--primary-white);
     background-color: var(--button-active-color);
 }
+}
+
+
 /*------MODAL---BUTTON---*/ 
 
 .btn-modal-send {
@@ -237,13 +234,13 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-modal-send:hover,
-.btn-modal-send:focus {
+    &:hover,
+    &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--primary-white);
     background-color: var(--button-active-color);
 }
+}
+

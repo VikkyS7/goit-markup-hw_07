@@ -82,7 +82,6 @@ html {
   box-sizing: inherit;
 }
 
-/*-----Portfolio----*/
 .header-portfolio {
   border: 1px solid var(--primary-background);
 }
@@ -97,7 +96,6 @@ html {
 .portfolio-link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -119,9 +117,7 @@ html {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-white:hover,
-.button-white:focus {
+.button-white:hover, .button-white:focus {
   color: var(--primary-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--accent-color);
@@ -132,7 +128,6 @@ html {
   gap: 8px;
   justify-content: center;
 }
-
 .btn-white li button {
   border-radius: 4px;
   padding: 6px 22px;
@@ -169,9 +164,7 @@ html {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
-
-.portfolio-top-item:hover .portfolio-top-text,
-.portfolio-top-item:focus .portfolio-top-text {
+.portfolio-top-item:hover .portfolio-top-text, .portfolio-top-item:focus .portfolio-top-text {
   transform: translateY(0);
 }
 
@@ -215,9 +208,7 @@ html {
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   color: var(--primary-white);
   background-color: var(--button-active-color);
 }
@@ -232,6 +223,9 @@ html {
   color: var(--primary-text-color);
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-links:hover, .header-links:focus {
+  color: var(--accent-color);
 }
 
 .current::after {
@@ -300,7 +294,6 @@ html {
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
-
 .logo:hover {
   color: var(--accent-color);
 }
@@ -325,6 +318,9 @@ html {
   color: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.mail:hover, .mail:focus {
+  color: var(--accent-color);
+}
 
 .address {
   font-weight: 400;
@@ -335,16 +331,7 @@ html {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 9px;
 }
-
-.mail:hover,
-.mail:focus,
-.phone:hover,
-.phone:focus {
-  color: var(--accent-color);
-}
-
-.address:hover,
-.address:focus {
+.address:hover, .address:focus {
   color: var(--accent-color);
 }
 
@@ -357,14 +344,12 @@ html {
   color: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.phone:hover, .phone:focus {
+  color: var(--accent-color);
+}
 
 ul {
   list-style: none;
-}
-
-.header-links:hover,
-.header-links:focus {
-  color: var(--accent-color);
 }
 
 .current {
@@ -565,6 +550,13 @@ ul {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.team-soc-link:hover, .team-soc-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white);
+}
+.team-soc-link:hover svg, .team-soc-link:focus svg {
+  fill: var(--primary-white);
+}
 
 .team-soc-item {
   width: 44px;
@@ -579,17 +571,6 @@ ul {
 
 .team-soc-icon {
   fill: var(--border-color);
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--primary-white);
-}
-
-.team-soc-link:hover svg,
-.team-soc-link:focus svg {
-  fill: var(--primary-white);
 }
 
 .features-title {
@@ -648,9 +629,7 @@ ul {
   fill: var(--border-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.client-link:hover,
-.client-link:focus {
+.client-link:hover, .client-link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -676,6 +655,9 @@ ul {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
 
 .modal-title {
   font-weight: 700;
@@ -697,16 +679,30 @@ ul {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
+}
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+.modal-input::-moz-placeholder {
+  color: var(--border-color);
+  font-size: 16px;
+}
+.modal-input:-ms-input-placeholder {
+  color: var(--border-color);
+  font-size: 16px;
+}
+.modal-input::placeholder {
+  color: var(--border-color);
+  font-size: 16px;
+}
 
 .modal-input-icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-input:focus + .modal-input-icon {
-  fill: var(--accent-color);
 }
 
 .modal-field {
@@ -726,9 +722,7 @@ ul {
   resize: none;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-text:focus,
-.modal-input:focus {
+.modal-text:focus {
   border-color: var(--accent-color);
 }
 
@@ -751,25 +745,6 @@ ul {
   margin-bottom: 4px;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleY(0);
-}
-
-.modal-input::-moz-placeholder {
-  color: var(--border-color);
-  font-size: 16px;
-}
-
-.modal-input:-ms-input-placeholder {
-  color: var(--border-color);
-  font-size: 16px;
-}
-
-.modal-input::placeholder {
-  color: var(--border-color);
-  font-size: 16px;
-}
-
 .check-text {
   font-size: 14px;
   color: var(--secondary-text-color);
@@ -777,7 +752,6 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
 .check-text:before {
   content: "";
   width: 15px;
@@ -786,16 +760,15 @@ ul {
   border-radius: 3px;
 }
 
+.input-check {
+  width: 15px;
+  height: 16px;
+}
 .input-check:checked + .check-text::before {
   background-color: var(--accent-color);
   border-color: transparent;
   background-image: url(../img/check.svg);
   background-repeat: no-repeat;
-}
-
-.input-check {
-  width: 15px;
-  height: 16px;
 }
 
 .agreement-text {
@@ -826,7 +799,6 @@ ul {
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-close:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
@@ -858,9 +830,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.btn-modal-send:hover,
-.btn-modal-send:focus {
+.btn-modal-send:hover, .btn-modal-send:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primary-white);
   background-color: var(--button-active-color);
@@ -886,9 +856,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.btn-modal-send:hover,
-.btn-modal-send:focus {
+.btn-modal-send:hover, .btn-modal-send:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primary-white);
   background-color: var(--button-active-color);
@@ -898,12 +866,18 @@ ul {
   background-color: #2f303a;
   padding: 60px 0px;
 }
+.footer.contacts-footer {
+  color: var(--contacts-color);
+}
+.footer .container {
+  align-items: baseline;
+  display: flex;
+}
 
 .footer-wrap {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts-footer {
@@ -913,17 +887,6 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 9px;
 }
-
-.footer-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer .contacts-footer {
-  color: var(--contacts-color);
-}
-
 .contacts-footer:hover {
   color: var(--accent-color);
 }
@@ -951,11 +914,6 @@ ul {
   margin-right: 10px;
 }
 
-.footer .container {
-  align-items: baseline;
-  display: flex;
-}
-
 .footer-soc-media {
   margin-left: 70px;
 }
@@ -970,6 +928,9 @@ ul {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-soc-link:hover, .footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
 
 .footer-soc-item {
   width: 44px;
@@ -980,16 +941,6 @@ ul {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
-
-.footer-soc-item :hover,
-.footer-soc-item:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-soc-link :hover,
-.footer-soc-link :focus {
-  background-color: var(--accent-color);
 }
 
 .footer-icon {

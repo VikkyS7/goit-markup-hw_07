@@ -23,6 +23,7 @@
   color: var(--primary-text-color);
   margin-bottom: 50px;
 }
+
 .h2 {
   font-weight: 500;
   font-size: 16px;
@@ -31,6 +32,7 @@
   color: var(--primary-text-color);
   margin-bottom: 10px;
 }
+
 .h2-portfolio {
   font-family: 'Roboto';
   font-style: normal;
@@ -71,8 +73,16 @@
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  
+  &:hover,
+  &:focus {
+      background-color: var(--accent-color);
+      fill: var(--primary-white);
+    } 
+        &:hover svg,
+        &:focus svg {
+          fill: var(--primary-white);
+    
+        }
 }
 
 .team-soc-item {
@@ -89,18 +99,6 @@
 
 .team-soc-icon{
   fill:var(--border-color);
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus{
-  background-color: var(--accent-color);
- fill: var(--primary-white);
-  
-}
-.team-soc-link:hover svg,
-.team-soc-link:focus svg {
-  fill: var(--primary-white);
-
 }
 
 .features-title {
@@ -125,5 +123,4 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--secondary-text-color);
-
 }
