@@ -1,4 +1,4 @@
-.mail-wrap {
+.connect__mail__wrap {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -6,7 +6,7 @@
     gap: 10px;
 }
 
-.phone-wrap {
+.connect__phone__wrap {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -14,15 +14,15 @@
     gap: 10px;
 }
 
-.envelop-icon {
+.connect__envelop__icon {
     fill: currentColor;
 }
 
-.phone-icon {
+.connect__phone__icon {
     fill: currentColor;
 }
 
-.mail {
+.connect__mail {
     @include font(14px, 1.71, 500, 0.03em);
 
     color: var(--secondary-text-color);
@@ -34,7 +34,7 @@
     }
 }
 
-.address {
+.connect__address {
     @include font(14px, 1.71, 400, 0.03em);
 
     color: var(--primary-white);
@@ -48,7 +48,7 @@
 }
 
 
-.phone {
+.connect__phone {
     font-style: normal;
     @include font(14px, 1.14, 500, 0.02em);
 

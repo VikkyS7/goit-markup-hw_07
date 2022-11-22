@@ -23,29 +23,35 @@
     <!-- <link href="./css/styles.css" rel="stylesheet" /> -->
   </head>
   <body>
-    <header class="header-portfolio">
-      <div class="container header-container">
-        <nav class="header-navigation">
-          <a class="link logo" href="./index.html"
+       <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a class="link logo navigation__logo" href="./index.html"
             ><span class="web">Web</span><span class="webstudio">Studio</span></a
           >
-          <ul class="header-list">
-            <li><a class="link header-links" href="./index.html">Студія</a></li>
-            <li><a class="link header-links current" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link header-links" href="#">Контакти</a></li>
+          <ul class="menu">
+            <li><a class="link menu__links current" href="./index.html">Студія</a></li>
+            <li><a class="link menu__links" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="link menu__links" href="#">Контакти</a></li>
           </ul>
         </nav>
 
-        <ul class="header-connect">
-          <li><a href="mailto:info@devstudio.com" class="link mail mail-wrap">
-            <svg class="envelop-icon" width="16" height="24">
-              <use href="./img/icons-all.svg#icon-mail"></use>
-            </svg>info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link phone phone-wrap">
-            <svg class="phone-icon" width="10" height="16">
-              <use href="./img//icons-all.svg#icon-phone"></use>
-            </svg>
-            +38 096 111 11 11</a></li>
+        <ul class="connect">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link connect__mail connect__mail__wrap">
+              <svg class="connect__envelop__icon" width="16" height="24">
+                <use href="./img/icons-all.svg#icon-mail"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="link connect__phone connect__phone__wrap">
+              <svg class="phone-icon" width="10" height="16">
+                <use href="./img/icons-all.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -175,7 +181,7 @@
           <ul class="contacts-footer-list">
             <li>
               <a
-                class="link address"
+                class="link connect__address"
                 href="https://goo.gl/maps/SCHz1njMYFFsMZ7L9"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -183,11 +189,11 @@
               >
             </li>
             <li>
-              <a class="link contacts-footer mail" href="mailto:info@devstudio.com">info@devstudio.com</a
+              <a class="link contacts-footer connect__mail" href="mailto:info@devstudio.com">info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="link contacts-footer mail" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="link contacts-footer connect__mail" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </address> 

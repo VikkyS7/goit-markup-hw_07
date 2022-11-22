@@ -22,6 +22,7 @@
     "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.autoprefix": [
         "defaults"
-    ]
+    ],
+    "workbench.editor.wrapTabs": false
 }
 

@@ -13,7 +13,7 @@
     background-size: cover;
 }
 
-.hero-title {
+.hero__title {
     @include font(44px, 1.36, 900, 0.06em);
         
     // font-weight: 900;
@@ -27,8 +27,4 @@
     margin-left: auto;
     width: 696px;
     margin-bottom: 30px;
-}
-
-.about {
-    padding: 94px 0;
 }

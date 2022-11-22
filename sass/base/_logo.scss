@@ -2,9 +2,6 @@
     font-family: 'Raleway';
     @include font(26px, 1.19, 700, 0.03em);
 
-    
-    margin-right: 93px;
-
     &:hover {
         color: var(--accent-color);
     }
